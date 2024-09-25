@@ -1,0 +1,40 @@
+GET http://localhost:7000/poems
+
+###
+GET http://localhost:7000/poems
+Content-Type: application/json
+
+###
+POST http://localhost:7000/poems/
+Content-Type: application/json
+
+{
+  "type": "HAIKU",
+  "poem": "An old silent pond, \nA frog jumps into the pond— \nSplash! Silence again.",
+  "author": "Matsuo Basho",
+  "title": "The Old Pond"
+}
+
+###
+POST http://localhost:7000/poems/
+Content-Type: application/json
+
+{
+  "type": "HAIKU",
+  "poem": "Hope is the thing with feathers \nThat perches in the soul, \nAnd sings the tune without the words, \nAnd never stops at all.",
+  "author": "Emily Dickinson",
+  "title": "Hope is the Thing with Feathers"
+}
+
+###
+POST http://localhost:7000/poems/
+Content-Type: application/json
+
+{
+  "type": "HAIKU",
+  "poem": "Winter seclusion –\nListening, that evening, \nTo the rain in the mountain.",
+  "author": "Kobayashi Issa",
+  "title": "Winter Seclusion"
+}
+
+
